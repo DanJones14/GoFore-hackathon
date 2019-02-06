@@ -3,12 +3,13 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title> GoFore </title>
+    <title> GoFore Drone</title>
 </head>
 <body>
-    <div>
-        Display/device status
-    </div>
+    <button a href="Connect">Connect</button> <button a href="Disconnect">Disconnect</button>
+    <div>Display/device status</div>
+    <h3>Connected: </h3>
+    <h3>Battery level: </h3>
 
     <div> Controls</div>
 
@@ -42,13 +43,20 @@
                 border-color: black;
             }
 
-            .tg .tg-1wig {
-                font-weight: bold;
+            .tg .tg-0lax {
                 text-align: left;
                 vertical-align: top
             }
 
-            .tg .tg-0lax {
+            .tg .tg-0pky {
+                border-color: inherit;
+                text-align: left;
+                vertical-align: top
+            }
+
+            .tg .tg-fymr {
+                font-weight: bold;
+                border-color: inherit;
                 text-align: left;
                 vertical-align: top
             }
@@ -69,25 +77,33 @@
             }
         }
     </style>
+
+    <!-- HTML table code from https://www.tablesgenerator.com/html_tables -->
     <div class="tg-wrap">
         <table class="tg">
             <tr>
                 <td class="tg-0lax"></td>
-                <td class="tg-0lax"><span style="font-weight:bold"><button a href="Insert action here">Up</button></td>
                 <td class="tg-0lax"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"><span style="font-weight:bold"><button class="btn Up">Up</button></span></td>
+                <td class="tg-0pky"></td>
             </tr>
             <tr>
-                <td class="tg-1wig"><span style="font-weight:bold"><button a href="Insert action here">Left</button></td>
+                <td class="tg-0lax"><span style="font-weight:bold"><button class="btn takeoff">Takeoff</button></td>
                 <td class="tg-0lax"></td>
-                <td class="tg-1wig"><span style="font-weight:bold"><button a href="Insert action here">Right</button></td>
+                <td class="tg-fymr"><button class="btn left">left</button></span></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-fymr"><button class="btn right">Right</button></span></td>
             </tr>
             <tr>
+                <td class="tg-0lax"><span style="font-weight:bold"><button class="btn land">land</button></span></td>
                 <td class="tg-0lax"></td>
-                <td class="tg-0lax"><span style="font-weight:bold"><button a href="Insert action here">Down</button></span></td>
-                <td class="tg-0lax"></td>
+                <td class="tg-0pky"></td>
+                <td class="tg-0pky"><span style="font-weight:bold"><button class="btn down">down</button></span></td>
+                <td class="tg-0pky"></td>
             </tr>
         </table>
-    </div
+    </div>
 
 </body>
 </html>
